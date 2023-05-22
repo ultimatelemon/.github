@@ -1,6 +1,10 @@
 <div align="center">
+  <img src="https://github.com/ultimatelemon/.github/blob/main/images/HQ2.png" alt="UltimateLemon" height="200" />
+  
   <br />
-  <h1>UltimateLemon 🍋</h1>
+  <br />
+  <br />
+  <br />
   <br />
   <strong>We create flexible software with our expertises</strong>
   <br />
