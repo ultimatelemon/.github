@@ -17,6 +17,6 @@
     <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/-TailwindCSS-000?style=for-the-badge&logo=tailwindcss"></a>
     <a href="https://expressjs.com/" target="_blank"><img src="https://img.shields.io/badge/-Express-000?style=for-the-badge&logo=express"></a>
     <a href="https://react.dev/" target="_blank"><img src="https://img.shields.io/badge/-React-000?style=for-the-badge&logo=react"></a>
-    <a href="https://react.dev/](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="_blank"><img src="https://img.shields.io/badge/-csharp-000?style=for-the-badge&logo=csharp"></a>
+    <a href="https://dotnet.microsoft.com/en-us/apps/xamarin" target="_blank"><img src="https://img.shields.io/badge/-xamarin-000?style=for-the-badge&logo=xamarin"></a>
   </p>
 </div>
