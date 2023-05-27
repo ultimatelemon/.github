@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/ultimatelemon/.github/blob/main/images/HQ2.png" alt="UltimateLemon" height="200" />
+  <img src="https://github.com/ultimatelemon/.github/blob/main/images/HQ2.png" alt="UltimateLemon" width="200" />
   
   <br />
   <br />
