@@ -1,0 +1,25 @@
+name: Code Quality
+
+on:
+  pull_request:
+  workflow_call:
+
+permissions: {}
+
+concurrency:
+  group: code-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    uses: ultimatelemon/shared-actions/.github/workflows/go-quality.yml@v2
+    permissions:
+      contents: read
+    # Runs gofmt, go vet, go test -race, go build and golangci-lint.
+    # with:
+    #   sqlc: true
+    #   working-directory: apps/bot
+    #
+    # Public repository? Never run on our own runners:
+    #   runs-on: ubuntu-latest
+    #   container-image: ''

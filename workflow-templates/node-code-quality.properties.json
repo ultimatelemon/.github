@@ -1,0 +1,7 @@
+{
+  "name": "UltimateLemon Code Quality (Node)",
+  "description": "Runs lint, format, typecheck, test and build through shared-actions on every pull request.",
+  "iconName": "ultimatelemon",
+  "categories": ["JavaScript", "TypeScript", "Node"],
+  "filePatterns": ["package.json$"]
+}

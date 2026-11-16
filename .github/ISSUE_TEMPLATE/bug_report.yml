@@ -1,0 +1,31 @@
+name: Bug report
+description: Something is broken or doesn't work as expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See the error
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Environment, URL, browser or device, version.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Logs, screenshots or anything else
+      render: text

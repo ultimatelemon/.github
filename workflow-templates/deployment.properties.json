@@ -1,0 +1,7 @@
+{
+  "name": "UltimateLemon Deployment",
+  "description": "Runs the checks, publishes the Docker image to GHCR and deploys it with Dokploy on every push to the default branch.",
+  "iconName": "ultimatelemon",
+  "categories": ["Deployment", "Dockerfile"],
+  "filePatterns": ["Dockerfile$"]
+}
