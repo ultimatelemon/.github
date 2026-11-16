@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security issue
+    url: https://github.com/ultimatelemon/.github/blob/main/SECURITY.md
+    about: Please don't open a public issue for vulnerabilities. Read how to report them privately.
+  - name: Questions or a project
+    url: https://ultimatelemon.eu
+    about: Get in touch with UltimateLemon.

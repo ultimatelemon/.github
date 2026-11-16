@@ -1,0 +1,7 @@
+{
+  "name": "UltimateLemon Code Quality (Go)",
+  "description": "Runs gofmt, go vet, tests with -race, build and golangci-lint through shared-actions on every pull request.",
+  "iconName": "ultimatelemon",
+  "categories": ["Go"],
+  "filePatterns": ["go.mod$"]
+}

@@ -1,0 +1,37 @@
+name: Deployment
+
+on:
+  push:
+    branches: [$default-branch]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: deployment-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  quality:
+    # Add the Code Quality workflow first; this reuses it as the gate.
+    uses: ./.github/workflows/code-quality.yml
+    permissions:
+      contents: read
+
+  publish:
+    needs: quality
+    uses: ultimatelemon/shared-actions/.github/workflows/docker-publish.yml@v2
+    permissions:
+      contents: read
+      packages: write
+    with:
+      image: ghcr.io/${{ github.repository }}
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/$default-branch'
+    needs: publish
+    uses: ultimatelemon/shared-actions/.github/workflows/dokploy-deploy.yml@v2
+    with:
+      url: https://example.com # TODO: the app's public URL
+    secrets:
+      webhook-url: ${{ secrets.DOKPLOY_DEPLOY_URL }}
